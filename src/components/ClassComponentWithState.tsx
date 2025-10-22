@@ -1,6 +1,6 @@
 import {Component} from "react";
 
-type Props = {};
+type Props = object;
 
 type State = {
     count: number;
