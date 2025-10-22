@@ -8,7 +8,8 @@
 // import Card from "./components/Card.tsx";
 import Layout from "./components/Layout.tsx";
 // import FunctionalComponentWithState from "./components/FunctionalComponentWithState.tsx";
-import ClassComponentWithState from "./components/ClassComponentWithState.tsx";
+// import ClassComponentWithState from "./components/ClassComponentWithState.tsx";
+import Counter from "./components/Counter.tsx";
 
 function App() {
 
@@ -34,7 +35,8 @@ function App() {
                 {/*    description="lorem ipsum dolor sit amet"*/}
                 {/*/>*/}
                 {/*<FunctionalComponentWithState/>*/}
-                <ClassComponentWithState/>
+                {/*<ClassComponentWithState/>*/}
+                <Counter/>
 
             </Layout>
         </>
