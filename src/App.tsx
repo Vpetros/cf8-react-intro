@@ -8,7 +8,9 @@
 // import Card from "./components/Card.tsx";
 import Layout from "./components/Layout.tsx";
 // import CounterAdvanced from "./components/CounterAdvanced.tsx";
-import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
+// import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
+import {useEffect} from "react";
+import NameChangerWithEffect from "./components/NameChangerWithEffect.tsx";
 // import CounterButton from "./components/CounterButton.tsx";
 // import CounterWithMoreStates from "./components/CounterWithMoreStates.tsx";
 // import NameChanger from "./components/NameChanger.tsx";
@@ -19,6 +21,9 @@ import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
 
 function App() {
 
+    useEffect(()=>{
+
+    });
 
     return (
         <>
@@ -46,7 +51,8 @@ function App() {
                 {/*<NameChanger/>*/}
                 {/*<CounterWithMoreStates/>*/}
                 {/*<CounterAdvanced/>*/}
-                <CounterWithCustomHook/>
+                {/*<CounterWithCustomHook/>*/}
+                <NameChangerWithEffect/>
             </Layout>
         </>
     )
