@@ -7,10 +7,11 @@
 // import ArrowFunctionalComponentWithPropsType from "./components/ArrowFunctionalComponentWithPropsType.tsx";
 // import Card from "./components/Card.tsx";
 import Layout from "./components/Layout.tsx";
+import WindowSize from "./components/WindowSize.tsx";
 // import CounterAdvanced from "./components/CounterAdvanced.tsx";
 // import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
 // import {useEffect} from "react";
-import Timer from "./components/Timer.tsx";
+// import Timer from "./components/Timer.tsx";
 // import NameChangerWithEffect from "./components/NameChangerWithEffect.tsx";
 // import CounterButton from "./components/CounterButton.tsx";
 // import CounterWithMoreStates from "./components/CounterWithMoreStates.tsx";
@@ -63,7 +64,8 @@ function App() {
                 {/*<CounterAdvanced/>*/}
                 {/*<CounterWithCustomHook/>*/}
                 {/*<NameChangerWithEffect/>*/}
-                <Timer/>
+                {/*<Timer/>*/}
+                <WindowSize/>
 
             </Layout>
         </>
