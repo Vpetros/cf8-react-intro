@@ -9,8 +9,9 @@
 import Layout from "./components/Layout.tsx";
 // import CounterAdvanced from "./components/CounterAdvanced.tsx";
 // import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
-import {useEffect} from "react";
-import NameChangerWithEffect from "./components/NameChangerWithEffect.tsx";
+// import {useEffect} from "react";
+import Timer from "./components/Timer.tsx";
+// import NameChangerWithEffect from "./components/NameChangerWithEffect.tsx";
 // import CounterButton from "./components/CounterButton.tsx";
 // import CounterWithMoreStates from "./components/CounterWithMoreStates.tsx";
 // import NameChanger from "./components/NameChanger.tsx";
@@ -21,9 +22,18 @@ import NameChangerWithEffect from "./components/NameChangerWithEffect.tsx";
 
 function App() {
 
-    useEffect(()=>{
+    // useEffect(() => {
+    //   const id  = setInterval(()=> console.log(id),1000)
+    //   return() => clearInterval(id);
+    // },[]);
 
-    });
+    // useEffect(()=> {
+    //   let counter: number = 1;
+    //   const id: number = setInterval(()=>{
+    //     console.log(counter++);
+    //   },1000)
+    //   return () => clearInterval(id);
+    // }, [])
 
     return (
         <>
@@ -52,7 +62,9 @@ function App() {
                 {/*<CounterWithMoreStates/>*/}
                 {/*<CounterAdvanced/>*/}
                 {/*<CounterWithCustomHook/>*/}
-                <NameChangerWithEffect/>
+                {/*<NameChangerWithEffect/>*/}
+                <Timer/>
+
             </Layout>
         </>
     )
