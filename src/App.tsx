@@ -6,15 +6,18 @@
 // import ArrowFunctionalComponentWithProps from "./components/ArrowFunctionalComponentWithProps.tsx";
 // import ArrowFunctionalComponentWithPropsType from "./components/ArrowFunctionalComponentWithPropsType.tsx";
 // import Card from "./components/Card.tsx";
-import Layout from "./components/Layout.tsx";
-import CounterWithRef from "./components/CounterWithRef.tsx";
+// import Layout from "./components/Layout.tsx";
+// import CounterWithRef from "./components/CounterWithRef.tsx";
+import {BrowserRouter, Route, Routes} from "react-router";
+import NameChanger from "./components/NameChanger.tsx";
+import HomePage from "./pages/HomePage.tsx";
 // import PreviousValue from "./components/PreviousValue.tsx";
 // import FocusInput from "./components/FocusInput.tsx";
 // import WindowSize from "./components/WindowSize.tsx";
 // import CounterAdvanced from "./components/CounterAdvanced.tsx";
 // import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
 // import {useEffect} from "react";
-// import Timer from "./components/Timer.tsx";
+import Timer from "./components/Timer.tsx";
 // import NameChangerWithEffect from "./components/NameChangerWithEffect.tsx";
 // import CounterButton from "./components/CounterButton.tsx";
 // import CounterWithMoreStates from "./components/CounterWithMoreStates.tsx";
@@ -39,6 +42,15 @@ function App() {
     //   return () => clearInterval(id);
     // }, [])
 
+    // useEffect(() => {
+    //   history.pushState({page: 1}, "", "/page");
+    //   history.replaceState({page: 1}, "", "/page1");
+    //
+    //   window.onpopstate = (e) => {
+    //     console.log(e.state);
+    //   }
+    // })
+
     return (
         <>
             {/*<ViteIntro />*/}
@@ -54,7 +66,7 @@ function App() {
 
             {/*<Card title="Card">*/}
             {/*</Card>*/}
-            <Layout>
+            {/*<Layout>*/}
                 {/*<ArrowFunctionalComponentWithPropsType*/}
                 {/*    title="Is an Arrow Functional Component With 2 Props"*/}
                 {/*    description="lorem ipsum dolor sit amet"*/}
@@ -71,9 +83,21 @@ function App() {
                 {/*<WindowSize/>*/}
                 {/*<FocusInput/>*/}
                 {/*<PreviousValue/>*/}
-                <CounterWithRef/>
+                {/*<CounterWithRef/>*/}
 
-            </Layout>
+            {/*</Layout>*/}
+
+
+            <BrowserRouter>
+                <Routes>
+                    <Route index element={<HomePage />} />
+                    <Route path="name-changer" element={<NameChanger />}/>
+                    <Route path="timer" element={<Timer />}/>
+
+
+                </Routes>
+
+            </BrowserRouter>
         </>
     )
 }
