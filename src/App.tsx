@@ -19,6 +19,7 @@ import HomePage from "./pages/HomePage.tsx";
 // import {useEffect} from "react";
 import Timer from "./components/Timer.tsx";
 import RouterLayout from "./components/RouterLayout.tsx";
+import UserPage from "./pages/UserPage.tsx";
 // import NameChangerWithEffect from "./components/NameChangerWithEffect.tsx";
 // import CounterButton from "./components/CounterButton.tsx";
 // import CounterWithMoreStates from "./components/CounterWithMoreStates.tsx";
@@ -108,12 +109,12 @@ function App() {
 
                     {/*<Route path="files/*" element={<FilePage />} />*/}
 
-                    {/*<Route path="users">*/}
-                    {/*    <Route path=":userId">*/}
-                    {/*        <Route index element={<UserPage/>}/>*/}
-                    {/*        <Route path="accounts" element={<UserAccountPage/>}/>*/}
-                    {/*    </Route>*/}
-                    {/*</Route>*/}
+                    <Route path="users">
+                        <Route path=":userId">
+                            <Route index element={<UserPage/>}/>
+                            {/*<Route path="accounts" element={<UserAccountPage/>}/>*/}
+                        </Route>
+                    </Route>
 
 
                 </Routes>
