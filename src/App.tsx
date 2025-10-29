@@ -107,7 +107,7 @@ function App() {
                     {/*<Route path="users/:userId" element={<UserPage />} />*/}
                     {/*<Route path="users/:userId/accounts" element={<UserAccountPage />} />*/}
 
-                    {/*<Route path="files/*" element={<FilePage />} />*/}
+
 
                     <Route path="users">
                         <Route path=":userId">
@@ -115,6 +115,10 @@ function App() {
                             {/*<Route path="accounts" element={<UserAccountPage/>}/>*/}
                         </Route>
                     </Route>
+
+                    {/*<Route path="files/*" element={<FilePage />} />*/}
+
+                    <Route path="*" element={<PageNotFound />}/>
 
 
                 </Routes>
