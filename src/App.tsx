@@ -18,6 +18,7 @@ import HomePage from "./pages/HomePage.tsx";
 // import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
 // import {useEffect} from "react";
 import Timer from "./components/Timer.tsx";
+import RouterLayout from "./components/RouterLayout.tsx";
 // import NameChangerWithEffect from "./components/NameChangerWithEffect.tsx";
 // import CounterButton from "./components/CounterButton.tsx";
 // import CounterWithMoreStates from "./components/CounterWithMoreStates.tsx";
@@ -90,9 +91,29 @@ function App() {
 
             <BrowserRouter>
                 <Routes>
+                  <Route element={<RouterLayout />}>
                     <Route index element={<HomePage />} />
-                    <Route path="name-changer" element={<NameChanger />}/>
-                    <Route path="timer" element={<Timer />}/>
+                    {/*<Route path="name-changer" element={<NameChanger />}/>*/}
+                    {/*<Route path="timer" element={<Timer />}/>*/}
+
+                        <Route path="examples?">
+                            <Route path="name-changer" element={<NameChanger />} />
+                            <Route path="timer" element={<Timer />} />
+                            {/*<Route path="*" element={<ExamplePage/>}/>*/}
+                        </Route>
+                  </Route>
+
+                    {/*<Route path="users/:userId" element={<UserPage />} />*/}
+                    {/*<Route path="users/:userId/accounts" element={<UserAccountPage />} />*/}
+
+                    {/*<Route path="files/*" element={<FilePage />} />*/}
+
+                    {/*<Route path="users">*/}
+                    {/*    <Route path=":userId">*/}
+                    {/*        <Route index element={<UserPage/>}/>*/}
+                    {/*        <Route path="accounts" element={<UserAccountPage/>}/>*/}
+                    {/*    </Route>*/}
+                    {/*</Route>*/}
 
 
                 </Routes>
