@@ -24,6 +24,7 @@ import ControlledInput from "./components/ControlledInput.tsx";
 import UncontrolledInput from "./components/UncontrolledInput.tsx";
 import MultifieldForm from "./components/MultifieldForm.tsx";
 import MultifieldFormWithValidation from "./components/MultifieldFormWithValidation.tsx";
+import MultifieldFormWithZod from "./components/MultifieldFormWithZod.tsx";
 // import NameChangerWithEffect from "./components/NameChangerWithEffect.tsx";
 // import CounterButton from "./components/CounterButton.tsx";
 // import CounterWithMoreStates from "./components/CounterWithMoreStates.tsx";
@@ -108,6 +109,7 @@ function App() {
                             <Route path="uncontrolled-input" element={<UncontrolledInput />} />
                             <Route path="multifield-form" element={<MultifieldForm />} />
                             <Route path="multifield-form-validation" element={<MultifieldFormWithValidation />} />
+                            <Route path="multifield-form-zod" element={<MultifieldFormWithZod />} />
                             {/*<Route path="*" element={<ExamplePage/>}/>*/}
                         </Route>
                   </Route>
